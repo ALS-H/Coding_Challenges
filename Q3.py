@@ -21,6 +21,12 @@ try:
 except ValueError:
     assert True
 
+try:
+    amount_to_pay(1000, 102)
+    assert False
+except ValueError:
+    assert True
+
 print("All test cases passed!")
 
 if __name__=="__main__":
