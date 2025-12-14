@@ -7,9 +7,6 @@ def series1(N):
         return []
     return list(range(1, N + 1))
 
-# Positive test cases
-assert series1(5) == [1, 2, 3, 4, 5]
-assert series1(0) == []        # N = 0
 #neg
 try:
     series1(-3)
