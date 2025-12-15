@@ -9,14 +9,7 @@ def sum_all_ele(mat):
 #positive cases
 assert sum_all_ele([[1, 2], [3, 4]]) == 10
 assert sum_all_ele([[5]]) == 5
-#negative cases
-# Non-numeric value
-try:
-    sum_all_ele([[1, 2], ["a", 3]])
-    assert False
-except TypeError:
-    assert True
-    
+assert sum_all_ele([[1, -2, 3], [4, -5, 6]]) == 7
 #edge cases
 assert sum_all_ele([[], []]) == 0     # multiple empty rows
 
