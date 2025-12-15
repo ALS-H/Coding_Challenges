@@ -29,5 +29,5 @@ if __name__=="__main__":
         ele=int(input("Enter an ele:"))
         arr.append(ele)
     o,e=odd_even_count(arr)
-    print("Odd count:",0)
+    print("Odd count:",o)
     print("Even count",e)
