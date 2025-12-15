@@ -1,5 +1,5 @@
 # Display the Series 1,4,9,25,36,49,81…N 
-#squares
+#squares of natural numbers skipping multiples of 4
 
 def squares(N):
     if N<0:
@@ -8,6 +8,8 @@ def squares(N):
         return []
     res=[]
     for i in range(1,N+1):
+        if i%4==0:
+            continue
         res.append(i*i)
     return res
 
