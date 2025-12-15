@@ -58,7 +58,8 @@ class tax_calculator:
     #Q12_taxable_income_calc
     def taxable_income_calc(self):
         std_deduction=50000
-        self.taxable_income=self.annual_gross_sal-std_deduction
+        #guard against negative taxable income
+        self.taxable_income = max(0, self.annual_gross_sal - std_deduction)
 
         #display the output
         print("Gross Salary: ",self.annual_gross_sal)
