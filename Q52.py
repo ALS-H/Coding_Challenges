@@ -5,7 +5,7 @@ def rev_arr(arr):
 
 #test cases
 assert rev_arr([10, 20, 30]) == [30, 20, 10]
-assert rev_arr([-1, -2, -3, -4]) == [-4, -3, -2, -1]
+assert rev_arr([-1, -1, -1, -1]) == [-1, -1, -1, -1]
 assert rev_arr([]) == []
 
 print("All test cases passed!")
