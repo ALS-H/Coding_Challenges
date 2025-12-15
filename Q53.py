@@ -9,13 +9,15 @@ def sort_arr(arr,instr):
         return arr
 
 #test cases
+#positive
 assert sort_arr([5, 2, 9, 1], "asc") == [1, 2, 5, 9]
 assert sort_arr([-1, -3, -2, -5], "desc") == [-1, -2, -3, -5]
-assert sort_arr([], "asc") == []
-assert sort_arr([], "desc") == []
-#invalid instruction
+#invalid instruction, negative case
 assert sort_arr([3, 1, 2], "xyz") == [3, 1, 2]
 assert sort_arr([3, 1, 2], "") == [3, 1, 2]
+#edge case
+assert sort_arr([], "asc") == []
+assert sort_arr([], "desc") == []
 
 print("All test cases passed!")
 
