@@ -21,7 +21,7 @@ def farmer_sales():
     # Other crops
     potatoes_sales = acres_per_crop * 10 * 1000 * 20
     cabbage_sales = acres_per_crop * 14 * 1000 * 24
-    sunflower_sales = acres_per_crop * 0.4 * 1000 * 200
+    sunflower_sales = acres_per_crop * 0.7 * 1000 * 200
     sugarcane_sales = acres_per_crop * 45 * 4000
 
     # Overall sales across 80 acres
